@@ -1,0 +1,41 @@
+<resources>
+
+    //hints
+
+    <string name="app_name">App de Contactos</string>
+    <string name="edit_nombre">Nombre Completo</string>
+    <string name="contacto_nombre">Nombre: </string>
+    <string name="edit_telefono">Teléfono</string>
+    <string name="contacto_tel">Tel: </string>
+    <string name="edit_email">Email</string>
+    <string name="contacto_email">Email: </string>
+    <string name="edit_fecha">Fecha de Nacimiento</string>
+    <string name="contacto_fecha">Fecha Nacimiento: </string>
+    <string name="edit_descripcion">Descripción Contacto</string>
+    <string name="contacto_descripcion">Descripción: </string>
+    <string name="boton_siguiente">Siguiente</string>
+    <string name="boton_confirmar">Confirmar Datos</string>
+    <string name="confirmar">Confirmar Datos</string>
+    <string name="pnombre">nombre</string>
+    <string name="pfecha">fechanacimiento</string>
+    <string name="ptelefono">telefono</string>
+    <string name="pemail">email</string>
+    <string name="pdescripcion">descripcion</string>
+
+    <!-- Array con los meses del año -->
+    <string-array name="nombremes">
+        <item>ENERO</item>
+        <item>FEBRERO</item>
+        <item>MARZO</item>
+        <item>ABRIL</item>
+        <item>MAYO</item>
+        <item>JUNIO</item>
+        <item>JULIO</item>
+        <item>AGOSTO</item>
+        <item>SEPTIEMBRE</item>
+        <item>OCTUBRE</item>
+        <item>NOVIEMBRE</item>
+        <item>DICIEMBRE</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_layout_form">10dp</dimen>
+    <integer name="lineas_formato">1</integer>
+    <integer name="lineas_descripcion">2</integer>
+    <integer name="layout_weight">1</integer>
+    <dimen name="font_size_confirmar">40dp</dimen>
+    <dimen name="cinco_dp">5dp</dimen>
+    <dimen name="data_padding">8sp</dimen>
+    <dimen name="date_spinner_height">120sp</dimen>
+    <dimen name="padding_fecha_formato">13dp</dimen>
+</resources>

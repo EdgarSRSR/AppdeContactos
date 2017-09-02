@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.LinearLayoutCompat
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+    <!-- Aquí se le pregunta al usuario su nombre -->
+
+    <android.support.design.widget.TextInputLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_layout_form"
+        app:hintAnimationEnabled="true"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edit_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_nombre"
+            android:lines="@integer/lineas_formato"
+            />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Aquí se le pregunta al usuario su fecha de nacimiento -->
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="@integer/layout_weight">
+
+        <TextView
+            android:id="@+id/fechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_fecha_formato"
+            android:hint="@string/edit_fecha"
+            android:layout_weight="@integer/layout_weight"/>
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/date_spinner_height"
+            android:layout_gravity="center_horizontal"
+            android:datePickerMode="spinner"
+            android:soundEffectsEnabled="true"
+            android:calendarViewShown="false"
+            android:spinnersShown="true"
+            tools:padding="@dimen/data_padding"
+            />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <!-- Aquí se le pregunta al usuario su número telefónico-->
+
+    <android.support.design.widget.TextInputLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        android:padding="@dimen/padding_layout_form">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edit_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_telefono"
+            android:lines="@integer/lineas_formato"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Aquí se le pregunta al susuario su mail-->
+
+    <android.support.design.widget.TextInputLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        android:padding="@dimen/padding_layout_form">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="@integer/lineas_formato"
+            android:hint="@string/edit_email"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Aquí el usuario escribe una decripción del contacto-->
+
+    <android.support.design.widget.TextInputLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="true"
+        android:padding="@dimen/padding_layout_form">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edit_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="@integer/lineas_descripcion"
+            android:hint="@string/edit_descripcion"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- botón de siguiente-->
+
+    <Button
+        android:id="@+id/siguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/boton_siguiente"
+        android:theme="@style/MiBotonRaised"
+        android:onClick="IrAConfirmarDatos"
+        />
+
+
+</android.support.v7.widget.LinearLayoutCompat>
